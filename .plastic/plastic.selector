@@ -1,0 +1,4 @@
+repository "20260326gamejam@tj_wechat_os_qy00ojzwk2shdybh7epdjlfhi@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
