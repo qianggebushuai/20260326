@@ -121,7 +121,6 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // 搜寻匹配的对话
         Dialogue matched = FindBestDialogue(npcId);
 
         if (matched == null)
@@ -366,27 +365,62 @@ public class DialogueManager : MonoBehaviour
             switch (action.actionType)
             {
                 case DialogueActionType.SetFlag:
-                    gdc.SetFlag(action.stringValue);
+                    if (!string.IsNullOrEmpty(action.stringValue))
+                    {
+                        gdc.SetFlag(action.stringValue);
+                    }
                     break;
 
                 case DialogueActionType.RemoveFlag:
-                    gdc.RemoveFlag(action.stringValue);
+                    if (!string.IsNullOrEmpty(action.stringValue))
+                    {
+                        gdc.RemoveFlag(action.stringValue);
+                    }
                     break;
 
                 case DialogueActionType.AddItem:
-                    gdc.AddItem(action.stringValue);
+                    if (action.itemData != null)
+                    {
+                        gdc.AddItem(action.itemData, action.itemAmount);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[Dialogue] AddItem 失败：itemData 为空（对话ID: {currentDialogue.dialogueId}）");
+                    }
                     break;
 
                 case DialogueActionType.RemoveItem:
-                    gdc.RemoveItem(action.stringValue);
+                    if (action.itemData != null)
+                    {
+                        gdc.RemoveItem(action.itemData, action.itemAmount);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[Dialogue] RemoveItem 失败：itemData 为空（对话ID: {currentDialogue.dialogueId}）");
+                    }
                     break;
 
                 case DialogueActionType.IncrementTalkCount:
-                    gdc.IncrementTalkCount(action.stringValue);
+                    // stringValue 为 NPC ID
+                    if (!string.IsNullOrEmpty(action.stringValue))
+                    {
+                        gdc.IncrementTalkCount(action.stringValue);
+                    }
+                    else
+                    {
+                        gdc.IncrementTalkCount(currentDialogue.npcId);
+                    }
                     break;
 
                 case DialogueActionType.TriggerEvent:
-                    gdc.TriggerCustomEvent(action.stringValue);
+                    if (!string.IsNullOrEmpty(action.stringValue))
+                    {
+                        gdc.TriggerCustomEvent(action.stringValue);
+                    }
+                    break;
+
+                default:
+                    Debug.LogWarning($"[Dialogue] 未知的 ActionType: {action.actionType}");
                     break;
             }
         }

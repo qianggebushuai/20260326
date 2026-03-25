@@ -5,13 +5,13 @@ using System.Collections.Generic;
 public class Dialogue : ScriptableObject
 {
     [Header("对话基本信息")]
-    public string dialogueId;            // 对话唯一ID
-    public string description;     
+    public string dialogueId;       
+    public string description;
 
     [Header("关联NPC")]
-    public string npcId;                 // 这段对话属于哪个NPC
+    public string npcId;             
 
-    [Header("优先级（数值越高越优先匹配）")]
+    [Header("优先级")]
     public int priority = 0;
 
     [Header("触发条件")]
@@ -20,7 +20,7 @@ public class Dialogue : ScriptableObject
     [Header("对话完成后执行的操作")]
     public List<DialogueAction> actionsOnComplete = new List<DialogueAction>();
 
-    [Header("对话内容 — 按顺序的每一句话")]
+    [Header("对话内容 ")]
     public List<DialogueLine> lines = new List<DialogueLine>();
 }
 
@@ -31,16 +31,25 @@ public class Dialogue : ScriptableObject
 public class DialogueAction
 {
     public DialogueActionType actionType;
+
+    [Header("字符串参数（用于 Flag、NPC ID、事件名称）")]
     public string stringValue;
+
+    [Header("整数参数")]
     public int intValue;
+
+    [Header("★ 物品参数（用于 AddItem / RemoveItem）")]
+    public itemdata itemData;
+
+    public int itemAmount = 1;
 }
 
 public enum DialogueActionType
 {
-    SetFlag,            // 设置全局标记
-    RemoveFlag,         // 移除全局标记
-    AddItem,            // 给予物品
-    RemoveItem,         // 移除物品
-    IncrementTalkCount, // 增加对话计数
-    TriggerEvent        // 触发自定义事件
+    SetFlag,            
+    RemoveFlag,         
+    AddItem,           
+    RemoveItem,         
+    IncrementTalkCount, 
+    TriggerEvent    
 }

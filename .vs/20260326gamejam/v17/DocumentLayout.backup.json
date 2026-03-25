@@ -1,0 +1,409 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\unity proj\\20260326gamejam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|g:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\gamedialogcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\gamedialogcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\gameeventcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\gameeventcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\daynight\\daynightcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daynight\\daynightcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\daynight\\lightsource2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daynight\\lightsource2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\eventandname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\eventandname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\dialogsystem\\dialoguecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogsystem\\dialoguecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\itemeffect\\itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemeffect\\itemeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\itemeffect\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemeffect\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\generalslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\generalslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\itemobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\inventorydragmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventorydragmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\itemdatahandcarry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemdatahandcarry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\player\\playerlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\handcarryUIslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\inventory\\handcarryUIslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemUIslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\inventory\\itemUIslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|G:\\unity proj\\20260326gamejam\\assets\\scripts\\camera\\camerafollows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71538A7D-F5C2-0575-E15E-7C2AE645BDA2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerafollows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameDialogControl.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\GameDialogControl.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\GameDialogControl.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\GameDialogControl.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\GameDialogControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T00:25:08.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DialogueCondition.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueCondition.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\DialogueCondition.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueCondition.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\DialogueCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T01:15:38.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\DialogueManager.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\DialogueManager.cs",
+              "ViewState": "AgIAAIABAAAAAAAAAAAAAJoBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:43:34.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LightSource2D.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\daynight\\LightSource2D.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\daynight\\LightSource2D.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\daynight\\LightSource2D.cs",
+              "RelativeToolTip": "Assets\\scripts\\daynight\\LightSource2D.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAswJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:39:43.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DayNightCycle.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\daynight\\DayNightCycle.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\daynight\\DayNightCycle.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\daynight\\DayNightCycle.cs",
+              "RelativeToolTip": "Assets\\scripts\\daynight\\DayNightCycle.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAAPwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:38:42.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameEventControl.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\GameEventControl.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\GameEventControl.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\GameEventControl.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\GameEventControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:08:43.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialogueLine.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueLine.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\DialogueLine.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\DialogueLine.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\DialogueLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T00:13:54.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\Dialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\Dialogue.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\Dialogue.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\Dialogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T01:51:13.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "eventandname.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\eventandname.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\dialogsystem\\eventandname.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\dialogsystem\\eventandname.cs",
+              "RelativeToolTip": "Assets\\scripts\\dialogsystem\\eventandname.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:50:22.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "inventory.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\inventory.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\inventory.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:44:35.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "itemdata.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemdata.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemdata.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemdata.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemdata.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:10:06.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "lighteffect.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemeffect\\lighteffect.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemeffect\\lighteffect.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemeffect\\lighteffect.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemeffect\\lighteffect.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:19:56.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "generalslot.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\generalslot.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\generalslot.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\generalslot.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\generalslot.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAwPsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:20:14.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "itemeffect.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemeffect\\itemeffect.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemeffect\\itemeffect.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemeffect\\itemeffect.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemeffect\\itemeffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:35:30.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "itemobject.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemobject.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemobject.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemobject.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemobject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:42:08.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "itemdatahandcarry.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemdatahandcarry.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemdatahandcarry.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemdatahandcarry.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemdatahandcarry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:10:14.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "inventoryitem.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\inventoryitem.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\inventoryitem.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\inventoryitem.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\inventoryitem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:42:15.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventoryDragManager.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\InventoryDragManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\InventoryDragManager.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\InventoryDragManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\InventoryDragManager.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:54:28.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Player.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\player\\Player.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\player\\Player.cs",
+              "RelativeToolTip": "Assets\\scripts\\player\\Player.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAkwLsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:57:10.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayerLight.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\player\\PlayerLight.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\player\\PlayerLight.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\player\\PlayerLight.cs",
+              "RelativeToolTip": "Assets\\scripts\\player\\PlayerLight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:52:06.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "itemUIslot.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemUIslot.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\itemUIslot.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\itemUIslot.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\itemUIslot.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:43:17.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "handcarryUIslot.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\handcarryUIslot.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\inventory\\handcarryUIslot.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\inventory\\handcarryUIslot.cs",
+              "RelativeToolTip": "Assets\\scripts\\inventory\\handcarryUIslot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T07:21:10.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UI.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\UI\\UI.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\UI\\UI.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\UI\\UI.cs",
+              "RelativeToolTip": "Assets\\scripts\\UI\\UI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T04:27:09.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CameraFollows.cs",
+              "DocumentMoniker": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\camera\\CameraFollows.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\camera\\CameraFollows.cs",
+              "ToolTip": "G:\\unity proj\\20260326gamejam\\Assets\\scripts\\camera\\CameraFollows.cs",
+              "RelativeToolTip": "Assets\\scripts\\camera\\CameraFollows.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:35:59.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

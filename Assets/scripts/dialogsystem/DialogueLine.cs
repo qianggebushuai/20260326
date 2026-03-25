@@ -26,5 +26,5 @@ public enum SpeakerSide
 {
     Left,
     Right,
-    Center  // 旁白等特殊情况
+    Center  
 }

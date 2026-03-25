@@ -1,11 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
-
-/// <summary>
-/// 全局对话状态管理器（单例）
-/// 存储：对话次数、物品持有、全局标记
-/// </summary>
+using UnityEngine.Events;
+[System.Serializable]
+public class CustomEvent : UnityEvent<string> { }
 public class GameDialogControl : MonoBehaviour
 {
     #region 单例
@@ -44,26 +42,45 @@ public class GameDialogControl : MonoBehaviour
     [Header("调试用 — 可在Inspector中查看")]
     [SerializeField] private List<string> debugFlags = new List<string>();
     [SerializeField] private List<string> debugItems = new List<string>();
-
-    // NPC对话次数记录  key=npcId, value=对话次数
-    private Dictionary<string, int> talkCounts = new Dictionary<string, int>();
-
-    // 玩家持有物品  key=itemId
-    private HashSet<string> inventory = new HashSet<string>();
-
-    // 全局标记/Flag  key=flagName
-    private HashSet<string> globalFlags = new HashSet<string>();
-
-    #endregion
-
-    #region 事件
     public event Action<string> OnFlagSet;
     public event Action<string> OnFlagRemoved;
     public event Action<string> OnItemAdded;
     public event Action<string> OnItemRemoved;
-    public event Action<string, int> OnTalkCountChanged; // npcId, newCount
-    public event Action<string> OnCustomEvent;           // 自定义事件
+    public event Action<string, int> OnTalkCountChanged;
+    public CustomEvent onCustomEvent;
+    private Dictionary<string, int> talkCounts = new Dictionary<string, int>();
+    [SerializeField]private HashSet<string> globalFlags = new HashSet<string>();
+
+
     #endregion
+
+    private void Start()
+    {
+
+    }
+
+    private void Update()
+    {
+        UpdateDebugItems(); // 更新调试列表
+    }
+
+    /// <summary>
+    /// 更新调试用的物品列表（同步 inventory 系统）
+    /// </summary>
+    private void UpdateDebugItems()
+    {
+        if (inventory.instance == null) return;
+
+        debugItems.Clear();
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
+        {
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null)
+            {
+                debugItems.Add($"{item.data.itemname} x{item.stacksize}");
+            }
+        }
+    }
 
     #region 对话次数
 
@@ -97,34 +114,141 @@ public class GameDialogControl : MonoBehaviour
 
     #region 物品系统
 
+
     public bool HasItem(string itemId)
     {
-        return inventory.Contains(itemId);
+        if (string.IsNullOrEmpty(itemId)) return false;
+        if (inventory.instance == null) return false;
+
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
+        {
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null && item.data.itemname == itemId)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
-    public void AddItem(string itemId)
+    public int GetItemCount(string itemId)
     {
-        if (inventory.Add(itemId))
+        if (string.IsNullOrEmpty(itemId)) return 0;
+        if (inventory.instance == null) return 0;
+
+        int count = 0;
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
         {
-            debugItems.Add(itemId);
-            OnItemAdded?.Invoke(itemId);
-            Debug.Log($"[GameDialogControl] 获得物品: {itemId}");
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null && item.data.itemname == itemId)
+            {
+                count += item.stacksize;
+            }
+        }
+        return count;
+    }
+
+    /// <summary>
+    /// ★ 添加物品（使用 itemdata 引用）
+    /// </summary>
+    public void AddItem(itemdata itemData, int amount = 1)
+    {
+        if (itemData == null) return;
+        if (inventory.instance == null)
+        {
+            Debug.LogWarning("[GameDialogControl] inventory.instance 为空，无法添加物品");
+            return;
+        }
+
+        if (inventory.instance.AddItem(itemData, amount))
+        {
+            OnItemAdded?.Invoke(itemData.itemname);
+            Debug.Log($"[GameDialogControl] 获得物品: {itemData.itemname} x{amount}");
         }
     }
 
-    public void RemoveItem(string itemId)
+    /// <summary>
+    /// ★ 移除物品（使用 itemdata 引用）
+    /// </summary>
+    public void RemoveItem(itemdata itemData, int amount = 1)
     {
-        if (inventory.Remove(itemId))
+        if (itemData == null) return;
+        if (inventory.instance == null)
         {
-            debugItems.Remove(itemId);
-            OnItemRemoved?.Invoke(itemId);
-            Debug.Log($"[GameDialogControl] 移除物品: {itemId}");
+            Debug.LogWarning("[GameDialogControl] inventory.instance 为空，无法移除物品");
+            return;
+        }
+
+        if (inventory.instance.RemoveItem(itemData, amount))
+        {
+            OnItemRemoved?.Invoke(itemData.itemname);
+            Debug.Log($"[GameDialogControl] 移除物品: {itemData.itemname} x{amount}");
         }
     }
 
+    /// <summary>
+    /// ★ 通过物品名称移除物品（需要先查找）
+    /// </summary>
+    public void RemoveItemByName(string itemId, int amount = 1)
+    {
+        if (string.IsNullOrEmpty(itemId)) return;
+        if (inventory.instance == null) return;
+
+        // 查找对应的 itemdata
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
+        {
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null && item.data.itemname == itemId)
+            {
+                RemoveItem(item.data, amount);
+                return;
+            }
+        }
+    }
+
+    /// <summary>
+    /// ★ 获取所有物品名称集合
+    /// </summary>
     public HashSet<string> GetAllItems()
     {
-        return new HashSet<string>(inventory);
+        HashSet<string> items = new HashSet<string>();
+
+        if (inventory.instance == null) return items;
+
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
+        {
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null)
+            {
+                items.Add(item.data.itemname);
+            }
+        }
+        return items;
+    }
+
+    public Dictionary<string, int> GetAllItemsWithCount()
+    {
+        Dictionary<string, int> items = new Dictionary<string, int>();
+
+        if (inventory.instance == null) return items;
+
+        for (int i = 0; i < inventory.instance.TotalSize; i++)
+        {
+            inventoryitem item = inventory.instance.GetItemAtSlot(i);
+            if (item != null && item.data != null)
+            {
+                string itemName = item.data.itemname;
+                if (items.ContainsKey(itemName))
+                {
+                    items[itemName] += item.stacksize;
+                }
+                else
+                {
+                    items[itemName] = item.stacksize;
+                }
+            }
+        }
+        return items;
     }
 
     #endregion
@@ -162,19 +286,18 @@ public class GameDialogControl : MonoBehaviour
 
     public void TriggerCustomEvent(string eventName)
     {
-        OnCustomEvent?.Invoke(eventName);
+        onCustomEvent?.Invoke(eventName);
         Debug.Log($"[GameDialogControl] 触发事件: {eventName}");
     }
 
     #endregion
 
-    #region 存档/读档（可选扩展）
+    #region 存档/读档（已更新）
 
     [System.Serializable]
     private class SaveData
     {
         public Dictionary<string, int> talkCounts;
-        public List<string> inventory;
         public List<string> flags;
     }
 
@@ -183,7 +306,6 @@ public class GameDialogControl : MonoBehaviour
         SaveData data = new SaveData
         {
             talkCounts = new Dictionary<string, int>(talkCounts),
-            inventory = new List<string>(inventory),
             flags = new List<string>(globalFlags)
         };
         return JsonUtility.ToJson(data);
@@ -195,11 +317,9 @@ public class GameDialogControl : MonoBehaviour
         if (data == null) return;
 
         talkCounts = data.talkCounts ?? new Dictionary<string, int>();
-        inventory = new HashSet<string>(data.inventory ?? new List<string>());
         globalFlags = new HashSet<string>(data.flags ?? new List<string>());
 
         debugFlags = new List<string>(globalFlags);
-        debugItems = new List<string>(inventory);
     }
 
     #endregion

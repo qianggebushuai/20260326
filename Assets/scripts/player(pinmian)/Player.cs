@@ -19,11 +19,13 @@ public class TopDownPlayer : MonoBehaviour
     #endregion
 
     #region 方向记录
-    private Vector2 animDirection = Vector2.down;
-    public FacingDirection facingDirection { get; private set; } = FacingDirection.Down;
+    private Vector2 animDirection = Vector2.right;
+    public FacingDirection facingDirection { get; private set; } = FacingDirection.Right;
 
     // 当前帧的输入方向（每帧更新）
     public Vector2 currentMoveInput { get; private set; }
+    public GameObject[] children;
+    List<GameObject> childGameObjects = new List<GameObject>();
     #endregion
 
     protected virtual void Awake()
@@ -42,6 +44,20 @@ public class TopDownPlayer : MonoBehaviour
         // 设置初始方向
         SetAnimatorDirection();
         stateMachine.Initialize(idleState);
+
+        foreach (Transform child in transform)
+        {
+            childGameObjects.Add(child.gameObject);
+        }
+    }
+    public void flip(float angle)
+    {
+
+        for (int i = 1; i < childGameObjects.Count; i++)
+        {
+            childGameObjects[i].transform.Rotate(0,angle , 0);
+                
+        }
     }
 
     protected virtual void Update()
